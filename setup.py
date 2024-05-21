@@ -25,4 +25,9 @@ setup(
         "isort==5.13.2",
         "pylint==3.2.2",
     ],
+    entry_points={
+        'console_scripts': [
+            'create_architecture=mshtlib.architecture.create_base_architecture:create_architecture',
+        ],
+    },
 )
