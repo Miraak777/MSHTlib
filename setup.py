@@ -27,7 +27,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'create_architecture=mshtlib.architecture.create_base_architecture:create_architecture',
+            'create_architecture=mshtlib.mshtlib.architecture.create_base_architecture:create_architecture',
         ],
     },
 )
