@@ -1,5 +1,5 @@
 from os import mkdir
-from architecture import create_tests, create_src, create_scripts
+from mshtlib.architecture import create_tests, create_src, create_scripts
 
 mkdir("docs")
 mkdir("logs")
