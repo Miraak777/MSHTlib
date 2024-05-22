@@ -27,7 +27,13 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'msinit = scripts:ms_init',
+            'ms_init = mshtlib.scripts:ms_init',
         ],
-    },
+    }
 )
+
+print("Entry points:", {
+    'console_scripts': [
+        'ms_init=mshtlib.scripts:ms_init',
+    ],
+})
