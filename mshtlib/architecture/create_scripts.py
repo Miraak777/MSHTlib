@@ -1,8 +1,8 @@
-from shutil import copytree
-from pathlib import Path
-from mshtlib.common_constants import PROJECT_DIR
+# from shutil import copytree
+# from pathlib import Path
+# from mshtlib.common_constants import PROJECT_DIR
+from os import mkdir, name
 
 
 def create_scripts():
-    copytree(PROJECT_DIR.joinpath("architecture").joinpath("scripts"), Path(".").joinpath("scripts"))
-
+    mkdir(name)
