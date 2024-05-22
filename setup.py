@@ -27,7 +27,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'create_architecture=mshtlib.scripts:create_architecture',
+            'msinit=scripts:ms_init',
         ],
     },
 )
