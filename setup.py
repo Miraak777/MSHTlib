@@ -27,7 +27,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'msinit=scripts:ms_init',
+            'msinit = scripts:ms_init',
         ],
     },
 )
