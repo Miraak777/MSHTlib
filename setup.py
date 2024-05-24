@@ -12,7 +12,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/Miraak777/MSHTlib",
-    packages=find_packages('mshtlib', include=['architecture*']),
+    packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
@@ -27,7 +27,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'create_architecture=mshtlib.create_base_architecture:create_architecture',
+            'ms_init = mshtlib.scripts:ms_init',
         ],
-    },
+    }
 )
