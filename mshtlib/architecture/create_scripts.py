@@ -8,10 +8,10 @@ from typing import TextIO
 def create_scripts():
     mkdir("scripts")
     if system() == SystemType.WINDOWS:
-        with open(Path("scripts").joinpath("local_ci.cmd")) as script_file:
+        with Path("scripts").open("local_ci.cmd") as script_file:
             write_local_ci_cmd(script_file)
     elif system() == SystemType.LINUX:
-        with open(Path("scripts").joinpath("local_ci.sh")) as script_file:
+        with Path("scripts").open("local_ci.sh") as script_file:
             write_local_ci_sh(script_file)
 
 
