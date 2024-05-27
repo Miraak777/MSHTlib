@@ -1,6 +1,6 @@
 import logging
 
-from mllib.src.core.logger_configurator import configurate_kedro_logging
+from mshtlib.kedro_shell.logger_configurator import configurate_kedro_logging
 
 from src.server.configs import get_config
 

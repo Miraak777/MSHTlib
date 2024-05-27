@@ -4,7 +4,7 @@ from typing import Any, Dict, List, Optional
 import config as conf
 import dacite
 
-from src import PROJECT_ROOT
+from src.common.const.paths import PROJECT_ROOT
 from src.server.configs.config_model import Args, Config
 
 DEFAULT_CONFIG_PATH = PROJECT_ROOT.joinpath("settings.ini")

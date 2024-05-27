@@ -6,7 +6,6 @@ from mshtlib.const import PROJECT_DIR
 
 def create_src():
     copytree(PROJECT_DIR.joinpath("architecture", "src_template"), "src")
-    mkdir(Path("src").joinpath("components"))
     mkdir(Path("src").joinpath("server", "endpoint_context_params"))
     with Path("src").joinpath("server", "endpoint_context_params").joinpath("template_context_params.yaml").open("w") as file:
         file.write("""

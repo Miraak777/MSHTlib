@@ -27,7 +27,7 @@ setup(
         "kedro==0.18.3",
         "python-configuration==0.11.0",
         "dacite==1.8.1",
-        "Flask==2.1.3",
+        "Flask=^2.1.3",
         "Flask-Cors==3.0.10",
 
     ],
