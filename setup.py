@@ -29,5 +29,6 @@ setup(
         'console_scripts': [
             'ms_init = mshtlib.scripts:ms_init',
         ],
-    }
+    },
+    include_package_data=True,
 )
