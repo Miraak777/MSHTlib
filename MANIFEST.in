@@ -1,3 +1,1 @@
 include README.md
-include mshtlib/architecture/cmd/local_ci.cmd
-include mshtlib/architecture/bash/local_ci.sh
