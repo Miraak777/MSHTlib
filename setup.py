@@ -31,4 +31,7 @@ setup(
         ],
     },
     include_package_data=True,
+    package_data={
+        '': ['architecture/cmd/local_ci.cmd', 'architecture/bash/local_ci.sh'],
+    },
 )
