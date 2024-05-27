@@ -1,5 +1,5 @@
 def create_settings():
-    with open("settings.ini") as file:
+    with open("settings.ini", mode="w") as file:
         file.write("""[SERVER]
 host = localhost
 port = 5006
