@@ -1,5 +1,10 @@
-from mshtlib.architecture.create_base_architecture import create_architecture
+from mshtlib.architecture import create_tests, create_src, create_scripts
+from os import mkdir
 
 
 def ms_init():
-    create_architecture()
+    mkdir("docs")
+    mkdir("logs")
+    create_src()
+    create_tests()
+    create_scripts()

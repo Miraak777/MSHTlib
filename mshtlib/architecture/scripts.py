@@ -1,16 +1,11 @@
 from pathlib import Path
 from os import mkdir
-from typing import TextIO
 
 
 def create_scripts():
     mkdir("scripts")
-    with Path("scripts").joinpath("local_ci.sh").open("w") as script_file:
-        write_local_ci_sh(script_file)
-
-
-def write_local_ci_sh(file: TextIO):
-    file.write("""
+    with Path("scripts").joinpath("local_ci.sh").open("w") as file:
+        file.write("""
 #!/bin/bash
 
 unittest() {
@@ -28,20 +23,20 @@ coverage() {
 
 isort() {
   echo "--------------------------------------ISORT--------------------------------------"
-  python3 -m isort ./src --diff --line-length 120 --check
+  python3 -m isort ./src_template --diff --line-length 120 --check
   echo "---------------------------------------------------------------------------------"
 
 }
 
 black() {
   echo "--------------------------------------BLACK--------------------------------------"
-  python3 -m black ./src --diff --line-length 120 --color
+  python3 -m black ./src_template --diff --line-length 120 --color
   echo "---------------------------------------------------------------------------------"
 }
 
 pylint() {
   echo "--------------------------------------PYLINT-------------------------------------"
-  python3 -m pylint ./src
+  python3 -m pylint ./src_template
   echo "---------------------------------------------------------------------------------"
 }
 activate () {
