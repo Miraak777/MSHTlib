@@ -2,7 +2,7 @@ from mshtlib.architecture import create_tests, create_src, create_scripts, creat
 from os import mkdir
 
 
-def ms_init():
+def msht_init():
     mkdir("docs")
     mkdir("logs")
     create_src()

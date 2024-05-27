@@ -33,7 +33,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'ms_init = mshtlib.scripts:ms_init',
+            'msht_init = mshtlib.scripts:msht_init',
         ],
     },
     include_package_data=True,
