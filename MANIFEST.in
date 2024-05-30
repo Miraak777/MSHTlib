@@ -1,4 +1,0 @@
-include README.md
-include mshtlib
-include scripts.py
-include __init__.py

@@ -24,10 +24,17 @@ setup(
         "black==24.4.2",
         "isort==5.13.2",
         "pylint==3.2.2",
+        "kedro==0.18.3",
+        "python-configuration==0.11.0",
+        "dacite==1.8.1",
+        "Flask>=2.1.3",
+        "Flask-Cors==3.0.10",
+
     ],
     entry_points={
         'console_scripts': [
-            'ms_init = mshtlib.scripts:ms_init',
+            'msht_init = mshtlib.scripts:msht_init',
         ],
-    }
+    },
+    include_package_data=True,
 )
