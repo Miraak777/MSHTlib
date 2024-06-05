@@ -1,4 +1,4 @@
-from mshtlib.architecture import create_tests, create_src, create_scripts, create_settings
+from mshtlib.architecture import *
 from os import mkdir
 
 
@@ -10,3 +10,7 @@ def msht_init():
     create_scripts()
     create_settings()
     print("Micro Service initialized successfully.")
+
+
+def msht_component():
+    create_component()
