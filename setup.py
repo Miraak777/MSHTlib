@@ -34,6 +34,7 @@ setup(
     entry_points={
         'console_scripts': [
             'msht_init = mshtlib.scripts:msht_init',
+            'msht_component = mshtlib.scripts:msht_component',
         ],
     },
     include_package_data=True,

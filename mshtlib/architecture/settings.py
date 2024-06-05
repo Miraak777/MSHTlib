@@ -2,7 +2,7 @@ def create_settings():
     with open("settings.ini", mode="w") as file:
         file.write("""[SERVER]
 host = localhost
-port = 5006
+port = 8000
 
 [LOGGING]
 level = WARNING
