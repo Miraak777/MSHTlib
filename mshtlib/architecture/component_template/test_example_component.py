@@ -1,7 +1,4 @@
-from typing import Any, Dict, List
 from unittest import TestCase
-
-from mshtlib.kedro_shell.predicates.exceptions import PredicateError
 
 from src.components import ComponentExample
 

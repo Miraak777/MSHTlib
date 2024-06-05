@@ -1,5 +1,3 @@
-from typing import Union
-
 from mshtlib.kedro_shell.predicates.predicates import Predicates
 
 
